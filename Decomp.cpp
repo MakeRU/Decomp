@@ -90,6 +90,16 @@ int main()
 	out_num = 0;
 	out_num_r = 0;
 
+	// Non-dimensionalization
+
+	dp_i = P_i - P_f;
+	dC_i = Cp_i - Cp_f;
+	Nu_nd = Nu_0;
+	t_nd = Nu_nd / dp_i;
+	R_nd = sqrt(t_nd*De);
+	m_nd = 4.0 * Pi / 3.0 * R_nd * R_nd * R_nd* P_i* MH2O / (Rg * T);
+
+
 	Im = 50;
 	dr = 49.0*Rb / Im;
 	r = new double[Im+1];

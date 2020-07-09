@@ -36,3 +36,8 @@ int Nu_flag, Cp_flag, Nucl_flag, Relaugh_flag;
 char out_name[25];
 FILE *in_file, *out_file, *Cp_file, *cut_file, *T_file;
 char s[128];
+
+
+// Non-dimensionalization
+
+double t_nd, R_nd, dp_i, dC_i, gamma, epsilon, Nu_nd, m_nd;
